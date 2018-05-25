@@ -302,7 +302,7 @@ func (session *session) extensions() []string {
 		extensions = append(extensions, "STARTTLS")
 	}
 
-	if session.server.Authenticator != nil && session.tls {
+	if session.server.Authenticator != nil {
 		extensions = append(extensions, "AUTH PLAIN LOGIN")
 	}
 
