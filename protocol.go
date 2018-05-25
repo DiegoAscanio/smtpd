@@ -370,11 +370,6 @@ func (session *session) handleAUTH(cmd command) {
 		return
 	}
 
-	if !session.tls {
-		session.reply(502, "Cannot AUTH in plain text mode. Use STARTTLS.")
-		return
-	}
-
 	mechanism := strings.ToUpper(cmd.fields[1])
 
 	username := ""
