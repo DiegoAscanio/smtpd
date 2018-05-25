@@ -7,7 +7,7 @@ Features
 --------
 
 * STARTTLS (using `crypto/tls`)
-* Authentication (PLAIN/LOGIN, only after STARTTLS)
+* Authentication (PLAIN/LOGIN)
 * XCLIENT (for running behind a proxy)
 * Connection, HELO, sender and recipient checks for rejecting e-mails using callbacks
 * Configurable limits for: connection count, message size and recipient count
